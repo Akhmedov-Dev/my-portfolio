@@ -17,7 +17,12 @@
     style="background-image: url(icon/download-removebg-preview.png);width: 100%;background-repeat: no-repeat;background-size: cover;background-position: center;">
 
     <header>
-        <nav>
+        <nav style="  width: 100% !important;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 999999;
+        background-color: rgba(0, 0, 0, 0.45);
+        opacity: 0.7;">
             <div class="div__nav">
                 <div class="topnav" id="myTopnav">
                     <div class="nav__atributes">
@@ -26,11 +31,11 @@
                             </p>
                         </a>
                         <div class="nav_div">
-                            <a id="a" style="color: rgb(255, 255, 255);" href="#my_skills">PROCESS</a>
-                            <a id="a" style="color: rgb(255, 255, 255); text-transform: uppercase;"
+                            <a class="nav_a" id="a" style="color: rgb(255, 255, 255);" href="#my_skills">PROCESS</a>
+                            <a class="nav_a" id="a" style="color: rgb(255, 255, 255); text-transform: uppercase;"
                                 href="#obavtore">about the author</a>
-                            <a id="a" class="active" style="color: white;" href="#my_works">MY WORKS</a>
-                            <a id="a" style="color: rgb(255, 255, 255);" href="#contact">CONTACT</a>
+                            <a class="nav_a" id="a" class="active" style="color: white;" href="#my_works">MY WORKS</a>
+                            <a class="nav_a" id="a" style="color: rgb(255, 255, 255);" href="#contact">CONTACT</a>
                             <p></p>
                             <a style="color: black;" href="javascript:void(0);" class="icon" onclick="myFunction()">
                                 <i style="font-size: 50px;" class="fa fa-bars"></i>
@@ -44,14 +49,12 @@
                     </div>
                 </div>
             </div>
-
         </nav>
     </header>
     <div class="container">
         <div class="layer">
             <div class="sidebar">
-                <img src="icon/jeiaA9vtAyt4fREVVNjkO-transformed.png" alt="avatar"
-                    class="avatar">
+                <img src="icon/jeiaA9vtAyt4fREVVNjkO-transformed.png" alt="avatar" class="avatar">
                 <h1>Asilbek Axmadov</h1>
                 <li>I'm <span>Frontend developer</span> from Uzbekistan</li>
                 <div class="social-media_blog">
@@ -295,16 +298,24 @@
 
 
         function myFunction() {
+            var nav = document.querySelector("nav")
+            var glavanaya = document.getElementById("glavnaya")
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
                 x.className += " responsive";
+                nav.style.width = "100%";
+                nav.style.height = "100%";
+                nav.style.opacity = "5";
             } else {
                 x.className = "topnav";
+                nav.style.width = "100%";
+                nav.style.height = "";
+                nav.style.opacity = "0.7";
             }
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
