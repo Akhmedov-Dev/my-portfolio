@@ -388,6 +388,7 @@
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+  margin-top: 20px;
 }
 
 .container .layer .main .portifolio .portifolio_body .portifolio_card .link {
@@ -439,7 +440,7 @@
   padding: 0px 1rem;
   -webkit-animation: part 3.5s ease-in 0s 1;
   animation: part 3.5s ease-in 0s 1;
-  margin-bottom: 2rem;
+  margin-top: 200px;
 }
 
 .container .layer .main .contact .contact_body {
@@ -802,7 +803,7 @@
     padding: 0px 1rem;
     -webkit-animation: part 3.5s ease-in 0s 1;
     animation: part 3.5s ease-in 0s 1;
-    margin-bottom: 2rem;
+    margin-top: 100px;
   }
 
   .container .layer .main .contact .contact_body {
@@ -1864,6 +1865,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    padding: 100px;
   }
 
   .container .layer .main .portifolio .portifolio_body .portifolio_card {
@@ -1889,14 +1891,13 @@
   }
 
   .container .layer .main .contact {
-    height: auto;
+    height: 300px;
     width: 100%;
     padding: 0px 1rem;
     -webkit-animation: part 3.5s ease-in 0s 1;
     animation: part 3.5s ease-in 0s 1;
-    margin-bottom: 2rem;
   }
-
+  
   .container .layer .main .contact .contact_body {
     height: 86%;
     width: 100%;
@@ -1962,7 +1963,6 @@
   }
 }
 
-/*# sourceMappingURL=style.css.map */
 .portifolio_image-1 {
   background-image: url(icon/ditarvel_screen_shot.PNG) !important;
   background-position: center;
@@ -1972,6 +1972,18 @@
 
 .portifolio_image-9 {
   background-image: url(icon/portfolio_img_2.png) !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.portifolio_image-10 {
+  background-image: url(icon/counterapp.png) !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.portifolio_image-11 {
+  background-image: url(icon/studentapp.png) !important;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1992,8 +2004,6 @@
   src: url(shrift/Revalia-Regular.ttf);
 }
 
-.topnav {
-}
 
 .nav__atributes {
   max-width: 1140px;
@@ -2033,8 +2043,10 @@
 }
 
 @media screen and (max-width: 690px) {
-  .topnav.responsive {
-    position: relative;
+  .nav_div {
+    margin: auto;
+    text-align: center;
+    align-items: center;
   }
 
   .topnav.responsive .icon {
@@ -2046,11 +2058,10 @@
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: center;
     margin-top: 20px;
-    position: relative;
-    font-size: 20px;
-    right: 60%;
-    top: 200px;    
+    font-size: 20px; 
+      
   }
+
 }
+
