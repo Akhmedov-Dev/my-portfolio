@@ -1719,6 +1719,12 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.portifolio_image-2 {
+  background-image: url(icon/bookshop.png) !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .portifolio_image-9 {
   background-image: url(icon/portfolio_img_2.png) !important;
